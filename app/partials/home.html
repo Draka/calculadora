@@ -43,17 +43,14 @@
             <div class="form-group">
               <label for="age" class="col-sm-4 control-label">Nivel Actividad</label>
               <div class="col-sm-8">
-                <select class="form-control">
-                    <option value="sedentario" selected="selected">Sedentario: poco o ningún ejercicio</option>
-                    <option value="pocoActivo">Poco activo: ejercicio 1-3 veces por semana</option>
-                    <option value="medianamente">Medianamente activo: ejercicio 3-5 veces por semana</option>
-                    <option value="activo">Muy activo: ejercicio 6-7 veces por semana</option>
-                    <option value="extraActivo">Extra activo: ejercicios muy intensos / trabajo físico</option>
+                <select class="form-control" ng-model="skills.activity">
+                    <option value="1.2" selected="selected">Sedentario: poco o ningún ejercicio</option>
+                    <option value="1.375">Poco activo: ejercicio 1-3 veces por semana</option>
+                    <option value="1.55">Medianamente activo: ejercicio 3-5 veces por semana</option>
+                    <option value="1.725">Muy activo: ejercicio 6-7 veces por semana</option>
                 </select>
               </div>
             </div>
-
-
           </form>
           <div class="alert alert-info" role="alert">
             <strong>Calorias diarias:</strong> {{calculate()}}

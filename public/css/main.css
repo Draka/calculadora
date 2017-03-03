@@ -5915,6 +5915,7 @@ textarea {
   resize: none; }
 
 .form-control {
+  height: auto;
   padding: 8px 12px;
   border: 2px solid #ebebeb;
   border-radius: 0;
