@@ -8,6 +8,6 @@ angular.module('MyApp')
       } else{
         tmb = (10 * $scope.skills.weight) + (6.25 * $scope.skills.height) - (5 * $scope.skills.age) + 5;
       }
-      return tmb * parseFloat($scope.skills.activity);
+      return Math.floor(tmb * parseFloat($scope.skills.activity)) || 0;
     };
   });
